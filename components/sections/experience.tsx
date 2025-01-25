@@ -4,9 +4,19 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
+    role: "Academic Content Creator",
+    company: "Parul University",
+    duration: "Jul 2024 - Nov 2024",
+    achievements: [
+      "Reframing and editing course content to enhance clarity and impactients.",
+      "Writing compelling scripts for educational lectures",
+      "Performing content editing for e-content to ensure high quality and consistency."
+    ],
+  },
+  {
     role: "Content Strategist",
     company: "DigiFrills",
-    duration: "Jan 2023 - Present",
+    duration: "Jan 2024 - Jun 2024",
     achievements: [
       "Developed SEO-driven strategies for multilingual campaigns (English & Telugu).",
       "Boosted client engagement by 30% through tailored editorial calendars.",
@@ -15,22 +25,13 @@ const experiences = [
   {
     role: "Content Writer",
     company: "TNM",
-    duration: "Aug 2022 - Dec 2022",
+    duration: "Apr 2024 - Nov 2024",
     achievements: [
       "Crafted persuasive content for B2B, B2C, and B2R websites.",
-      "Delivered a high-performing order page that improved conversions by 20%.",
+      "Collaborating with team members to brainstorm ideas and develop content strategies.",
     ],
   },
-  {
-    role: "Freelance Academic Writer",
-    company: "Self-Employed",
-    duration: "2021 - 2022",
-    achievements: [
-      "Researched and authored concise academic papers for global clients.",
-      "Achieved consistent client satisfaction with a 4.9/5 rating.",
-    ],
-  },
-];
+  ];
 
 export function Experience() {
   return (
