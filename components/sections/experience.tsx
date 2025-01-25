@@ -2,11 +2,22 @@
 
 import { motion } from "framer-motion";
 
+
 const experiences = [
+  {
+    role: "Academic Content Creator",
+    company: "Parul University",
+    duration: "Jul 2024 - Nov 2024",
+    achievements: [
+      "Reframing and editing course content to enhance clarity and impactients.",
+      "Writing compelling scripts for educational lectures",
+      "Performing content editing for e-content to ensure high quality and consistency."
+    ],
+  },
   {
     role: "Content Strategist",
     company: "DigiFrills",
-    duration: "Jan 2023 - Present",
+    duration: "Jan 2024 - Jun 2024",
     achievements: [
       "Developed SEO-driven strategies for multilingual campaigns (English & Telugu).",
       "Boosted client engagement by 30% through tailored editorial calendars.",
@@ -15,26 +26,17 @@ const experiences = [
   {
     role: "Content Writer",
     company: "TNM",
-    duration: "Aug 2022 - Dec 2022",
+    duration: "Apr 2024 - Nov 2024",
     achievements: [
       "Crafted persuasive content for B2B, B2C, and B2R websites.",
-      "Delivered a high-performing order page that improved conversions by 20%.",
-    ],
-  },
-  {
-    role: "Freelance Academic Writer",
-    company: "Self-Employed",
-    duration: "2021 - 2022",
-    achievements: [
-      "Researched and authored concise academic papers for global clients.",
-      "Achieved consistent client satisfaction with a 4.9/5 rating.",
+      "Collaborating with team members to brainstorm ideas and develop content strategies.",
     ],
   },
 ];
 
 export function Experience() {
   return (
-    <section className="relative py-24 bg-primary text-light">
+    <section className="relative py-24 bg-secondary-foreground text-light">
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <motion.div
@@ -43,7 +45,7 @@ export function Experience() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h2 className="text-8xl font-bold text-primary-foreground mb-4">Experience</h2>
+          <h2 className="text-6xl font-bold text-primary-foreground mb-4 sm:text-6xl md:text-8xl ">Experience</h2>
           <p className="text-secondary text-lg">
             A snapshot of my professional journey and key accomplishments.
           </p>
@@ -69,7 +71,6 @@ export function Experience() {
                     <li key={idx} className="text-muted-foreground">
                       {achievement}
                     </li>
-
                   ))}
                 </ul>
               </div>

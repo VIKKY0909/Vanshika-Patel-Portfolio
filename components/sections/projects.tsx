@@ -20,7 +20,7 @@ export function Project() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <h2 className="text-8xl font-bold text-accent-foreground text-center mb-8">
+          <h2 className="text-7xl font-bold text-accent-foreground text-center mb-8 ">
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

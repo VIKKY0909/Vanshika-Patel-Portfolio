@@ -7,7 +7,7 @@ import { ArchCard } from "@/components/animations/arch-card"
 
 export function Hero() {
   return (
-    <section className="min-h-screen bg-primary text-foreground overflow-hidden flex items-center">
+    <section className="min-h-screen bg-secondary-foreground text-foreground overflow-hidden flex items-center">
       <FloatingElements />
       <div className="container px-4 py-24 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
