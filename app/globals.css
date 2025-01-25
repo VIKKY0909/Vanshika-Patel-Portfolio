@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 245, 245, 245; /* Light beige for text */
+    --background-start-rgb: 45, 0, 0; /* Crimson gradient start */
+    --background-end-rgb: 30, 0, 0;  /* Crimson gradient end */
+  }
+}
+
+@layer base {
+  :root {
+    --background: 60, 56%, 91%; /* Beige */
+    --foreground: 348 83% 20%; /* Crimson red for primary text */
+    --card: 75 80% 96%; /* Beige for card background */
+    --card-foreground: 348 83% 20%; /* Crimson text on cards */
+    --popover: 15 10% 96%; /* Beige for popover */
+    --popover-foreground: 348 83% 20%;
+    --primary: 348 83% 47%; /* Crimson red */
+    --primary-foreground: 60 56% 91%; /* Beige text */
+    --secondary: 15 20% 90%; /* Lighter beige */
+    --secondary-foreground: 348 83% 30%; /* Dark crimson */
+    --muted: 15 15% 88%; /* Muted beige */
+    --muted-foreground: 348 80% 40%; /* Muted crimson */
+    --accent: 348 83% 47%; /* Crimson red accent */
+    --accent-foreground: 15 10% 96%; /* Beige */
+    --destructive: 0 84% 47%; /* Bright red for warnings */
+    --destructive-foreground: 15 10% 96%;
+    --border: 15 20% 88%; /* Neutral beige */
+    --input: 15 20% 88%;
+    --ring: 348 83% 47%; /* Crimson red for focus rings */
+    --chart-1: 348 83% 47%; /* Crimson for data visualization */
+    --chart-2: 15 20% 90%; /* Beige tones for charts */
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 2rem;
+  }
+  .nav-bar . {
+    max-width: 100%;
+  }
+  .nav-bar .logo {
+    font-size: 1.5rem;
+  }
+  .nav-bar .navigation-menu {
+    display: none;
+  }
+  .nav-bar .button {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-bar {
+    padding: 4rem;
+  }
+  .nav-bar {
+    max-width: 1200px;
+  }
+  .nav-bar .logo {
+    font-size: 2rem;
+  }
+  .nav-bar .navigation-menu {
+    display: block;
+  }
+  .nav-bar .button {
+    display: none;
+  }
+}
