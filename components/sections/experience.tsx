@@ -33,7 +33,6 @@ const experiences = [
     ],
   },
 ];
-=======
 
 export function Experience() {
   return (
