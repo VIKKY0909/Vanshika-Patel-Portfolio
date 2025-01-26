@@ -20,29 +20,11 @@ export function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <div className="relative">
-            <Image
-              src={pic}
-              alt="Vanshika Patel"
-              width={350}
-              height={400}
-              className="rounded-full shadow-lg ring ring-foreground ring-offset-3"
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div
-                className="rounded-full border-8 border-background  animate-pulse"
-                style={{ width: "350px", height: "400px" }}
-              ></motion.div>
-            </div>
-          </div>
-          <h1 className="mt-6 text-5xl font-bold text-foreground text-center leading-snug">
-            Vanshika Patel
-          </h1>
-          <p className="mt-4 text-lg max-w-3xl text-secondary-foreground text-center">
+          {/* <p className="mt-4 text-lg max-w-3xl text-secondary-foreground text-center">
             Transforming ideas into impactful content that inspires action. My
             expertise spans SEO-driven strategies, persuasive campaigns, and
             audience-first narratives designed to elevate your brand.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Story Section */}

@@ -15,7 +15,7 @@ export function Hero() {
           <HeroImage />
         </div>
       </div>
-      <ArchCard />
+      {/* <ArchCard /> */}
     </section>
   )
 }

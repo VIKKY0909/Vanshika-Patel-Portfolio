@@ -1,7 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-
+import pic from "@/public/Images/pic.jpg";
+import Image from "next/image";
 export function HeroImage() {
   return (
     <div className="relative">
@@ -17,13 +18,15 @@ export function HeroImage() {
         animate={{ clipPath: "inset(0% 0 0 0)" }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
       >
-        <img
-          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2264&auto=format&fit=crop"
-          alt="Vanshika Patel"
-          className="object-cover w-full h-full"
-        />
+        <Image
+              src={pic}
+              alt="Vanshika Patel"
+              // width={350}
+              // height={400}
+              className="w-full h-full"
+            />
         <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-      </motion.div>
+      </motion.div> 
     </div>
   )
 }
